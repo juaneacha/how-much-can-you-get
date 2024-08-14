@@ -1,0 +1,124 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111">
+
+
+
+  
+
+  <title>What Sport Was Your Body Meant To Play?</title>
+
+    <link rel="canonical" href="https://codepen.io/freeCodeCamp/pen/VPaoNP">
+  
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  
+<style>
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+:root {
+  --color-white: #f3f3f3;
+  --color-darkblue: #030303;
+  --color-darkblue-alpha: rgba(0, 0, 0, 0.8);
+  --color-green: #fbcd00;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+}
+
+/* mobile friendly alternative to using background-attachment: fixed */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient(
+      115deg,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.7)
+    ), url(https://rare-gallery.com/mocahbig/471280-building-clouds-Germany-Olympics.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+  font-weight: 70%;
+  line-height: 1.2;
+  font-size:400%
+}
+
+
+
+h1,
+p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.text-container {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  opacity: .5;
+  height:100%;
+  width:100%;
+}
+
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+</head>
+
+<body translate="no" data-new-gr-c-s-check-loaded="14.1188.0" data-gr-ext-installed="">
+  <div class="text-container">
+     <div>
+        <h1 id="title">{{sport_to_play}}</h1>
+    
+     </div>
+  </div>
+
+  
+
+  
+
+
+
+</body></html>
