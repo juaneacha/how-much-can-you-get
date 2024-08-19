@@ -39,35 +39,33 @@ def home():
 @app.route('/predict',methods=['POST'])
 def predict():
 
-    int_features = [float(x) for x in request.form.values()] #Convert string inputs to float.
-    sports = ['Basketball', 'Judo', 'Badminton', 'Sailing', 'Gymnastics', 'Wrestling', 'Rowing',
-              'Athletics', 'Swimming', 'Football', 'Equestrianism', 'Shooting', 'Taekwondo',
-              'Boxing', 'Weightlifting', 'Fencing', 'Diving', 'Canoeing', 'Handball', 'Water Polo',
-              'Tennis', 'Cycling', 'Hockey', 'Softball', 'Volleyball', 'Synchronized Swimming', 
-              'Modern Pentathlon', 'Table Tennis', 'Baseball', 'Rhythmic Gymnastics', 'Rugby Sevens', 
-              'Archery', 'Trampolining', 'Beach Volleyball', 'Ice Hockey', 'Figure Skating']
+    int_features = [float(x) for x in request.form.values()] #Convert string inputs to float.    
+
+    age = int_features[3]
+    Income = int_features[3]
+    CreditScore = int_features[3]
+    MonthsEmployed = int_features[3]
+    NumCreditLines = int_features[3]
     
+    LoanTerm = int_features[3]
+    Education = int_features[3]
+    EmploymentType = int_features[3]
+    MaritalStatus = int_features[3]
+    HasMortgage = int_features[3]
+    
+    HasDependents = int_features[3]
+    LoanPurpose	 = int_features[3]
+    HasCoSigner = int_features[3]
 
-    try: #Converts height from ft to cm
-        tempHeight = str(int_features[0])
-        tempHeight = ((float(tempHeight[0])*12) + float(tempHeight[1:])) * 2.54 
-    except(ValueError):
-        tempHeight += 0
-
-    sex = int_features[3]
-    age = int_features[2]
-    height = tempHeight
-    weight = (int_features[1])/(2.205)
-    team = int_features[5]
-    season = int_features[4]
-
-    features = [np.array([sex, age, height, weight, team, season])]  #Convert to the form [[a, b, c, ...]] for input to the model
+    features = [np.array([age, Income, CreditScore, MonthsEmployed,
+                           NumCreditLines, LoanTerm, Education, EmploymentType,
+                            MaritalStatus, HasMortgage, HasDependents,  LoanPurpose, HasCoSigner])]  #Convert to the form [[a, b, c, ...]] for input to the model
     print(features)
     prediction = model.predict(features)  # features Must be in the form [a, b, c, ...]
     output = round(prediction[0], 2)
 
     print(output)
-    return render_template('results_page.html', sport_to_play ='Your Body Was Meant For  {}'.format(sports[int(output)]))
+    return render_template('results_page.html', sport_to_play ='Your Body Was Meant For  {}'.format(output))
 
 
 #When the Python interpreter reads a source file, it first defines a few special variables. 
