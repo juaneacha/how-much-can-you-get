@@ -6,7 +6,6 @@ Trained on the data set of actual olympic athletes and their accomplishments in 
 The model uses their height, weight, age, sex, sport, team, year, 
 and season in which the athelte competed to predict one's likelyhood of making it into that sport.
  The dataset is composed of 263785 observations of which 72,000 are used.
-
 """
 
 
@@ -18,7 +17,7 @@ import pickle
 app = Flask(__name__)
 
 #Load the trained model. (Pickle file)
-model = pickle.load(open('models/model_dt.pkl', 'rb'))
+model = pickle.load(open('models/lin_reg.pkl', 'rb'))
 
 #Define the route to be home. 
 #The decorator below links the relative route of the URL to the function it is decorating.
@@ -41,31 +40,32 @@ def predict():
 
     int_features = [float(x) for x in request.form.values()] #Convert string inputs to float.    
 
-    age = int_features[3]
+    age = int_features[2]
     Income = int_features[3]
-    CreditScore = int_features[3]
-    MonthsEmployed = int_features[3]
-    NumCreditLines = int_features[3]
+    CreditScore = int_features[1]
+    MonthsEmployed = int_features[4]
+    NumCreditLines = int_features[0]
     
-    LoanTerm = int_features[3]
-    Education = int_features[3]
-    EmploymentType = int_features[3]
-    MaritalStatus = int_features[3]
-    HasMortgage = int_features[3]
+    LoanTerm = int_features[5]
+    Education = int_features[10]
+    EmploymentType = int_features[6]
+    MaritalStatus = int_features[7]
+    HasMortgage = int_features[11]
     
-    HasDependents = int_features[3]
-    LoanPurpose	 = int_features[3]
-    HasCoSigner = int_features[3]
+    HasDependents = int_features[8]
+    LoanPurpose	 = int_features[9]
+    HasCoSigner = int_features[12]
 
     features = [np.array([age, Income, CreditScore, MonthsEmployed,
                            NumCreditLines, LoanTerm, Education, EmploymentType,
                             MaritalStatus, HasMortgage, HasDependents,  LoanPurpose, HasCoSigner])]  #Convert to the form [[a, b, c, ...]] for input to the model
+    print(int_features)
     print(features)
-    prediction = model.predict(features)  # features Must be in the form [a, b, c, ...]
-    output = round(prediction[0], 2)
+    prediction = model.predict(features)  # features Must be in the form [[a, b, c, ...]]
+    output = "$" + str(round(prediction[0]))
 
-    print(output)
-    return render_template('results_page.html', sport_to_play ='Your Body Was Meant For  {}'.format(output))
+    #print(output)
+    return render_template('results_page.html', sport_to_play ='This is how much you can get  {}'.format(output))
 
 
 #When the Python interpreter reads a source file, it first defines a few special variables. 

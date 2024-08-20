@@ -224,11 +224,11 @@ form {
   <form action="{{ url_for('predict')}}" method="post" id="survey-form">
     <div class="form-group">
       <label id="name-label" for="name">Number of Credit Lines</label>
-      <input type="number" name="NumCreditLines" id="NumCreditLines" min="0" max="100"  class="form-control" placeholder="Please Enter Number of Credit Lines" required="">
+      <input type="number" name="NumCreditLines" id="NumCreditLines" min="1" max="4"  class="form-control" placeholder="Please Enter Number of Credit Lines" required="">
     </div>
     <div class="form-group">
       <label id="email-label" for="email">Credit Score</label>
-      <input type="number" name="CreditScore" id="CreditScore" min="0" max="900"  class="form-control" placeholder="Please Enter Credit Score" required="">
+      <input type="number" name="CreditScore" id="CreditScore" min="300" max="850"  class="form-control" placeholder="Please Enter Credit Score" required="">
     </div>
     <div class="form-group">
       <label id="number-label" for="number">Age</label>
@@ -236,15 +236,15 @@ form {
     </div>
     <div class="form-group">
       <label id="number-label" for="number">Income</label>
-      <input type="number" name="Income" id="Income" min="18" max="99" class="form-control" placeholder="Please Enter Income">
+      <input type="number" name="Income" id="Income" min="15000" max="150000" class="form-control" placeholder="Please Enter Income">
     </div>
     <div class="form-group">
       <label id="number-label" for="number">Months Employed</label>
-      <input type="number" name="MonthsEmployed" id="MonthsEmployed" min="18" max="99" class="form-control" placeholder="Please Enter Months Employed">
+      <input type="number" name="MonthsEmployed" id="MonthsEmployed" min="0" max="120" class="form-control" placeholder="Please Enter Months Employed">
     </div>
     <div class="form-group">
       <label id="number-label" for="number">Loan Term</label>
-      <input type="number" name="LoanTerm" id="LoanTerm" min="18" max="99" class="form-control" placeholder="Please Enter Loan Term">
+      <input type="number" name="LoanTerm" id="LoanTerm" min="12" max="60" class="form-control" placeholder="Please Enter Loan Term">
     </div>
     <div class="form-group">
       <p>Employment Type</p>
@@ -269,10 +269,8 @@ form {
       <p>Dependents</p>
       <select id="dropdown" name="HasDependents" class="form-control" required="">
         <option disabled selected value>Please Select Employment Type</option>
-        <option value=0>Full-Time</option>
-        <option value=3>Part-Time</option>
-        <option value=2>Self-Employed</option>
-        <option value=1>Unemployed</option>      
+        <option value=0>Yes</option>
+        <option value=1>No</option>   
       </select>
     </div>
     <div class="form-group">
