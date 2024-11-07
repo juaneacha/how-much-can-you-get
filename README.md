@@ -1,7 +1,7 @@
-#How Much Can You Get?: Increasing Conversion Rates For Banks Through Loan Calculator
+# How Much Can You Get?: Increasing Conversion Rates For Banks Through Loan Calculator
 
 
-##Introduction
+## Introduction
 Banks, like many businesses, struggle when it comes making quality leads. There are many factors that influence the generation of quality leads. However, a potential solution is having a website powered by a ML model that can predict the maximum amount of loan one can have based on one’s income, employment status, credit score, and other factors. A website like this can increase conversion rates by at least 40% (Sy).
 
 **Concepts Applied:**
@@ -14,7 +14,7 @@ Banks, like many businesses, struggle when it comes making quality leads. There 
 - How to setup an online system to provide value to the customer online?
 
 ----
-##Data Collection And Cleaning
+## Data Collection And Cleaning
 - Data Collection
   - The dataset used for this project was originally created and posted on Kaggle by NIKHIL. The dataset is a compilation of Financial loan services are leveraged by companies across many industries, from big banks, financial institutions, and government loans. It contains 18 features and 255,347 observations. Some of the features include age, income, loan amount, default and so on. The file of this dataset can be found at: https://www.kaggle.com/datasets/nikhil1e9/loan-default
 - Include image of the dataset
@@ -22,7 +22,9 @@ Banks, like many businesses, struggle when it comes making quality leads. There 
   - Data points are evaluated for correctness, datatypes and overall uniformity
   - Outliers are dropped from the dataset
   - Null values are imputed and dropped when needed
-##Data Modeling
+
+----
+## Data Modeling
 - Pre-Modeling
   - The LoanAmount class is selected as the target class
   - Non-numeric datatypes are converted to numeric (float)
@@ -38,7 +40,9 @@ Banks, like many businesses, struggle when it comes making quality leads. There 
   - ML model is saved as a pickle file
   - ProcFile for Heroku is created and setup
   - Heroku is setup to show HTML index and embed ML Model
-##Conclusion and Recommendations 
+
+----
+## Conclusion and Recommendations 
   - Providing value through a website that can tell you the maximum amount of money you can borrow is a great way to increase brand awareness and trust
   - A regression algorithm is the best suited for predicting a person’s highest potential loan amount
   - The linear regression algorithm generated in this project is the best algorithm suited to power a loan estimator website. This is because of it small size and slightly better performance across the board. 
