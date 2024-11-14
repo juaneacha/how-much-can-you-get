@@ -1,5 +1,8 @@
 # How Much Can You Get?: Increasing Number Of Leads For Banks Through Loan Calculator
-
+![](loancalc.png)
+<p align="center">
+ <a href="https://how-much-can-you-get-749ef1683164.herokuapp.com/" target="_blank">Find Out How Much You Can Get Now!</a>
+</p>
 
 ## Introduction
 Banks, like many businesses, struggle when it comes to generating quality leads. There are many factors that influence the generation of quality leads. However, a potential solution is having a website powered by an ML model that can predict the maximum amount of loan one can have based on one’s income, employment status, credit score, and other factors. Just having a website like this can increase leads from 3% to 5% (66.7% Increase)(Sy).
@@ -17,7 +20,8 @@ Banks, like many businesses, struggle when it comes to generating quality leads.
 ## Data Collection And Cleaning
 - Data Collection
   - The dataset used for this project was originally created and posted on Kaggle by NIKHIL. The dataset is a compilation of Financial loan services are leveraged by companies across many industries, from big banks, financial institutions, and government loans. It contains 18 features and 255,347 observations. Some of the features include age, income, loan amount, default and so on. The file of this dataset can be found at: https://www.kaggle.com/datasets/nikhil1e9/loan-default
-- Include image of the dataset
+- Raw Data Snapshot
+  ![](loandata.png)
 - Data Cleaning
   - Data points are evaluated for correctness, datatypes and overall uniformity
   - Outliers are dropped from the dataset
@@ -33,6 +37,7 @@ Banks, like many businesses, struggle when it comes to generating quality leads.
 - Modeling
  - Linear, Ridge, Lasso, ElasticNet, and Gradient Descent algorithms are created
   - Models evaluation
+  - ![](algocomp.png)
   - Results
     - Linear regression  is the best algorithm out of the five. This is gleaned from the table containing the MAE, MSE, RMSE,  R2 Square results. In the table, most algorithms are  similar to one another in terms of performance. The only exception is gradient descent which significantly under performs the other 4. Linear regression is selected because it has better explainability than the other models. Moreover, it is the lightest of the five, making it ideal for web deployment
 - Model Deployment
