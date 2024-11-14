@@ -1,8 +1,8 @@
-# How Much Can You Get?: Increasing Conversion Rates For Banks Through Loan Calculator
+# How Much Can You Get?: Increasing Number Of Leads For Banks Through Loan Calculator
 
 
 ## Introduction
-Banks, like many businesses, struggle when it comes making quality leads. There are many factors that influence the generation of quality leads. However, a potential solution is having a website powered by a ML model that can predict the maximum amount of loan one can have based on one’s income, employment status, credit score, and other factors. A website like this can increase conversion rates by at least 40% (Sy).
+Banks, like many businesses, struggle when it comes to generating quality leads. There are many factors that influence the generation of quality leads. However, a potential solution is having a website powered by an ML model that can predict the maximum amount of loan one can have based on one’s income, employment status, credit score, and other factors. Just having a website like this can increase leads from 3% to 5% (66.7% Increase)(Sy).
 
 **Concepts Applied:**
 - Regression Modeling: Linear, Ridge, Lasso, ElasticNet, Gradient Descent
@@ -37,12 +37,14 @@ Banks, like many businesses, struggle when it comes making quality leads. There 
     - Linear regression  is the best algorithm out of the five. This is gleaned from the table containing the MAE, MSE, RMSE,  R2 Square results. In the table, most algorithms are  similar to one another in terms of performance. The only exception is gradient descent which significantly under performs the other 4. Linear regression is selected because it has better explainability than the other models. Moreover, it is the lightest of the five, making it ideal for web deployment
 - Model Deployment
   - HTML Index file is created with a form and graphics UI
-  - ML model is saved as a pickle file
+  - The ML model is saved as a pickle file
   - ProcFile for Heroku is created and setup
-  - Heroku is setup to show HTML index and embed ML Model
+  - Heroku is set to show HTML index and embed ML Model
 
 ----
 ## Conclusion and Recommendations 
-  - Providing value through a website that can tell you the maximum amount of money you can borrow is a great way to increase brand awareness and trust
-  - A regression algorithm is the best suited for predicting a person’s highest potential loan amount
-  - The linear regression algorithm generated in this project is the best algorithm suited to power a loan estimator website. This is because of it small size and slightly better performance across the board. 
+- Providing value through a website that can tell you the maximum amount of money you can borrow is a great way to increase brand awareness and trust
+- A regression algorithm is the best suited for predicting a person’s highest potential loan amount
+- The linear regression algorithm generated in this project is the best algorithm suited to power a loan estimator website. This is because of its small size and slightly better performance across the board. 
+- Integrating this site into the existing infrastructure has the potential to increase leads by up to 66.7%
+
