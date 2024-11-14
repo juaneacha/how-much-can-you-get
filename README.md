@@ -37,7 +37,7 @@ Banks, like many businesses, struggle when it comes to generating quality leads.
 - Modeling
  - Linear, Ridge, Lasso, ElasticNet, and Gradient Descent algorithms are created
   - Models evaluation
-  - ![](algocomp.png)
+   ![](algocomp.png)
   - Results
     - Linear regression  is the best algorithm out of the five. This is gleaned from the table containing the MAE, MSE, RMSE,  R2 Square results. In the table, most algorithms are  similar to one another in terms of performance. The only exception is gradient descent which significantly under performs the other 4. Linear regression is selected because it has better explainability than the other models. Moreover, it is the lightest of the five, making it ideal for web deployment
 - Model Deployment
