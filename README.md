@@ -5,7 +5,7 @@
 </p>
 
 ## Introduction
-Banks, like many businesses, struggle when it comes to generating quality leads. There are many factors that influence the generation of quality leads. However, a potential solution is having a website powered by an ML model that can predict the maximum amount of loan one can have based on one’s income, employment status, credit score, and other factors. Just having a website like this can increase leads from 3% to 5% (66.7% Increase)(Sy).
+Banks, like many businesses, struggle when it comes to generating quality leads. There are many factors that influence the generation of quality leads. However, a potential solution is having a website powered by an ML model that can predict the maximum amount of loan one can have based on one’s income, employment status, credit score, and other factors. Just having a website like this can increase leads from 3% to 5% (66.7% Increase)<a href="https://www.goodvibesquad.com/blog/how-to-improve-your-mortgage-lead-conversion/#:~:text=What%20is%20the%20average%20mortgage,number%20to%204%2D5%25." target="_blank">(Sy)</a>.
 
 **Concepts Applied:**
 - Regression Modeling: Linear, Ridge, Lasso, ElasticNet, Gradient Descent
