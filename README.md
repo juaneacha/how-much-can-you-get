@@ -1,11 +1,11 @@
-# How Much Can You Get?: Increasing Number Of Leads For Banks Through Loan Calculator
+# How Much Can You Get?: Increasing Number Of Leads And Lead Conversion Rates For Banks Through Loan Calculator
 ![](loancalc.png)
 <p align="center">
  <a href="https://how-much-can-you-get-749ef1683164.herokuapp.com/" target="_blank">Find Out How Much You Can Get Now!</a>
 </p>
 
 ## Introduction
-Banks, like many businesses, struggle when it comes to generating quality leads. There are many factors that influence the generation of quality leads. However, a potential solution is having a website powered by an ML model that can predict the maximum amount of loan one can have based on one’s income, employment status, credit score, and other factors. Just having a website like this can increase leads from 3% to 5% (66.7% Increase)<a href="https://www.goodvibesquad.com/blog/how-to-improve-your-mortgage-lead-conversion/#:~:text=What%20is%20the%20average%20mortgage,number%20to%204%2D5%25." target="_blank">(Sy)</a>.
+Banks, like many businesses, struggle when it comes to generating quality leads and converting them. There are many factors that influence these issues. However, a potential solution is having a website powered by an ML model that can predict the maximum amount of loan one can have based on one’s income, employment status, credit score, and other factors. Just having a website like this can increase leads from 3% to 5% (66.7% Increase)<a href="https://www.goodvibesquad.com/blog/how-to-improve-your-mortgage-lead-conversion/#:~:text=What%20is%20the%20average%20mortgage,number%20to%204%2D5%25." target="_blank">(Sy)</a>.
 
 **Concepts Applied:**
 - Regression Modeling: Linear, Ridge, Lasso, ElasticNet, Gradient Descent
