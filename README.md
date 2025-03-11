@@ -1,4 +1,4 @@
-# How Much Can You Get?: Increasing Lead Conversion Rates For Banks Through Loan Calculator
+# How Much Can You Get: Increasing Lead Conversion Rates For Banks Through Loan Calculator
 ![](loancalc.png)
 <p align="center">
  <a href="https://how-much-can-you-get-749ef1683164.herokuapp.com/" target="_blank">Find Out How Much You Can Get Now!</a>
