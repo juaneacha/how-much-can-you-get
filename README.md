@@ -14,12 +14,12 @@ Financial institutions often face significant hurdles in lead generation and con
 **Problem Statement:**
 - How to increase customer awareness of our financial products?
 - How to provide value to the customer online?
-- How to setup an online system to provide value to the customer online?
+- How to set up an online system to provide value to the customer online?
 
 ----
 ## Data Collection And Cleaning
 - Data Collection
-  - The dataset utalized for this project was originally created by NIKHIL on Kaggle. The dataset is a compilation of Financial loan services leveraged by companies across many industries including major financial institutions and government. It contains 18 features and 255,347 observations. Some of the features include age, income, loan amount, and default. The dataset can be found at: https://www.kaggle.com/datasets/nikhil1e9/loan-default
+  - The dataset utilized for this project was originally created by NIKHIL on Kaggle. The dataset is a compilation of Financial loan services leveraged by companies across many industries including major financial institutions and government. It contains 18 features and 255,347 observations. Some of the features include age, income, loan amount, and default. The dataset can be found at: https://www.kaggle.com/datasets/nikhil1e9/loan-default
 - Raw Data Snapshot
   ![](loandata.png)
 - Data Cleaning
@@ -48,8 +48,10 @@ Financial institutions often face significant hurdles in lead generation and con
 
 ----
 ## Conclusion and Recommendations 
-- Providing value through a website that can tell you the maximum amount of money you can borrow is a great way to increase brand awareness and trust
-- A regression algorithm is the best suited for predicting a person’s highest potential loan amount
-- The linear regression algorithm is the best algorithm suited to power a loan estimator website. Its small size and slightly better performance across the board make it the ideal candidate for this task. 
-- Integrating this site into the existing infrastructure has the potential to increase leads by up to 66.7%
+- Value-Driven Engagement: Offering a real-time loan estimation tool serves as a powerful utility that builds brand authority and consumer trust.
+- Optimal Model Selection: Through comparative analysis, regression-based modeling was determined to be the most effective approach for accurately predicting maximum borrowing capacity.
+- Strategic Implementation: The Linear Regression algorithm was selected for production due to its lightweight architecture and consistent performance, making it the ideal engine for a responsive web interface.
+- Quantifiable Impact: Integrating this ML-powered solution into existing digital infrastructure provides a clear path to scaling lead generation by up to 66.7%.
+
+
 
