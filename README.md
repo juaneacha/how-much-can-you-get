@@ -35,7 +35,7 @@ Financial institutions often face significant hurdles in lead generation and con
   - Correlation among the features is evaluated
   - Data is split into 75% and 25% for training and testing, respectively
 - Modeling
- - Linear, Ridge, Lasso, ElasticNet, and Gradient Descent algorithms are created
+  - Linear, Ridge, Lasso, ElasticNet, and Gradient Descent algorithms are created
   - Models evaluation
    ![](algocomp.png)
   - Results
